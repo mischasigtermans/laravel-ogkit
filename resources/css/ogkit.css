@@ -1,0 +1,148 @@
+/* Ogkit Template Utilities
+ * These classes use CSS variables set on the template element
+ */
+
+/* Base template font */
+.og-template {
+    font-family: var(--og-font-family);
+}
+
+/* Background colors */
+.og-bg-primary {
+    background-color: var(--og-background-primary-color);
+}
+
+.og-bg-secondary {
+    background-color: var(--og-background-secondary-color);
+}
+
+.og-bg-accent {
+    background-color: var(--og-accent-color);
+}
+
+/* Text colors */
+.og-text-primary {
+    color: var(--og-foreground-primary-color);
+}
+
+.og-text-secondary {
+    color: var(--og-foreground-secondary-color);
+}
+
+.og-text-accent {
+    color: var(--og-accent-color);
+}
+
+/* Border colors */
+.og-border-primary {
+    border-color: var(--og-foreground-primary-color);
+}
+
+.og-border-secondary {
+    border-color: var(--og-foreground-secondary-color);
+}
+
+.og-border-accent {
+    border-color: var(--og-accent-color);
+}
+
+/* Font family */
+.og-font {
+    font-family: var(--og-font-family), system-ui, sans-serif;
+}
+
+/* Gradient backgrounds */
+.og-bg-type-gradient-vertical {
+    background: linear-gradient(to bottom, var(--og-background-primary-color), var(--og-background-secondary-color));
+}
+
+.og-bg-type-gradient-diagonal {
+    background: linear-gradient(to bottom right, var(--og-background-primary-color), var(--og-background-secondary-color));
+}
+
+.og-bg-type-gradient-horizontal {
+    background: linear-gradient(to right, var(--og-background-primary-color), var(--og-background-secondary-color));
+}
+
+/* Pattern backgrounds */
+.og-bg-type-waves {
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--og-background-secondary-color) 10px);
+}
+
+.og-bg-type-zig-zag {
+    background-image: linear-gradient(135deg, var(--og-background-secondary-color) 25%, transparent 25%), linear-gradient(225deg, var(--og-background-secondary-color) 25%, transparent 25%), linear-gradient(45deg, var(--og-background-secondary-color) 25%, transparent 25%), linear-gradient(315deg, var(--og-background-secondary-color) 25%, var(--og-background-primary-color) 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-repeat: repeat;
+    background-size: 20px 20px;
+}
+
+.og-bg-type-moons {
+    background-image: radial-gradient(ellipse farthest-corner at 10px 10px, var(--og-background-secondary-color), var(--og-background-secondary-color) 50%, var(--og-background-primary-color) 50%);
+    background-size: 10px 10px;
+}
+
+.og-bg-type-diagonal {
+    background: repeating-linear-gradient(45deg, var(--og-background-secondary-color), var(--og-background-secondary-color) 5px, var(--og-background-primary-color) 5px, var(--og-background-primary-color) 25px);
+}
+
+.og-bg-type-diagonal-v2 {
+    background: repeating-linear-gradient(-45deg, var(--og-background-secondary-color), var(--og-background-secondary-color) 5px, var(--og-background-primary-color) 5px, var(--og-background-primary-color) 25px);
+}
+
+.og-bg-type-diagonal-v3 {
+    background-image: repeating-linear-gradient(45deg, var(--og-background-secondary-color) 0, var(--og-background-secondary-color) 1px, var(--og-background-primary-color) 0, var(--og-background-primary-color) 50%);
+    background-size: 10px 10px;
+}
+
+.og-bg-type-paper {
+    background-image: linear-gradient(var(--og-background-secondary-color) 2px, transparent 2px), linear-gradient(90deg, var(--og-background-secondary-color) 2px, transparent 2px), linear-gradient(var(--og-background-secondary-color) 1px, transparent 1px), linear-gradient(90deg, var(--og-background-secondary-color) 1px, var(--og-background-primary-color) 1px);
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+}
+
+.og-bg-type-lines {
+    background-image: linear-gradient(0deg, var(--og-background-primary-color) 50%, var(--og-background-secondary-color) 50%);
+    background-size: 10px 10px;
+}
+
+.og-bg-type-lines-v2 {
+    background-image: linear-gradient(to right, var(--og-background-secondary-color), var(--og-background-secondary-color) 5px, var(--og-background-primary-color) 5px, var(--og-background-primary-color));
+    background-size: 10px 100%;
+}
+
+.og-bg-type-lines-v3 {
+    background-image: repeating-linear-gradient(0deg, var(--og-background-secondary-color), var(--og-background-secondary-color) 1px, var(--og-background-primary-color) 1px, var(--og-background-primary-color));
+    background-image: repeating-linear-gradient(to right, var(--og-background-secondary-color), var(--og-background-secondary-color) 1px, var(--og-background-primary-color) 1px, var(--og-background-primary-color));
+    background-size: 20px 20px;
+}
+
+.og-bg-type-boxes {
+    background-image: linear-gradient(var(--og-background-secondary-color) 1px, transparent 1px), linear-gradient(to right, var(--og-background-secondary-color) 1px, var(--og-background-primary-color) 1px);
+    background-size: 20px 20px;
+}
+
+.og-bg-type-triangles {
+    background-image: linear-gradient(45deg, var(--og-background-secondary-color) 50%, var(--og-background-primary-color) 50%);
+    background-size: 10px 10px;
+}
+
+.og-bg-type-triangles-v2 {
+    background-image: linear-gradient(-45deg, var(--og-background-primary-color), var(--og-background-primary-color) 50%, var(--og-background-secondary-color) 50%, var(--og-background-secondary-color));
+    background-size: 10px 10px;
+}
+
+.og-bg-type-rectangles {
+    background-image: repeating-linear-gradient(45deg, var(--og-background-secondary-color) 25%, transparent 25%, transparent 75%, var(--og-background-secondary-color) 75%, var(--og-background-secondary-color)), repeating-linear-gradient(45deg, var(--og-background-secondary-color) 25%, var(--og-background-primary-color) 25%, var(--og-background-primary-color) 75%, var(--og-background-secondary-color) 75%, var(--og-background-secondary-color));
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+}
+
+.og-bg-type-plusses {
+    background: radial-gradient(circle, transparent 20%, var(--og-background-primary-color) 20%, var(--og-background-primary-color) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--og-background-primary-color) 20%, var(--og-background-primary-color) 80%, transparent 80%, transparent) 25px 25px, linear-gradient(var(--og-background-secondary-color) 2px, transparent 2px) 0 -1px, linear-gradient(90deg, var(--og-background-secondary-color) 2px, var(--og-background-primary-color) 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+/* Radial gradient utility */
+.og-bg-radial-gradient {
+    background: radial-gradient(circle at center, var(--tw-gradient-from, transparent), var(--tw-gradient-to, transparent));
+}
