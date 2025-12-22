@@ -1,11 +1,11 @@
-# Laravel Ogkit
+# Laravel OG Kit
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mischasigtermans/laravel-ogkit.svg?style=flat-square)](https://packagist.org/packages/mischasigtermans/laravel-ogkit)
 [![Total Downloads](https://img.shields.io/packagist/dt/mischasigtermans/laravel-ogkit.svg?style=flat-square)](https://packagist.org/packages/mischasigtermans/laravel-ogkit)
 
-Dynamic OG images for Laravel. Design social previews with HTML and CSS using [Ogkit](https://ogkit.dev).
+Dynamic OG images for Laravel. Design social previews with HTML and CSS using [OG Kit](https://ogkit.dev).
 
-Ogkit screenshots your custom HTML templates to generate beautiful Open Graph images. This package provides Blade components, directives, and 21 pre-built templates to get you started quickly.
+OG Kit screenshots your custom HTML templates to generate beautiful Open Graph images. This package provides Blade components, directives, and 21 pre-built templates to get you started quickly.
 
 ## Installation
 
@@ -76,7 +76,7 @@ Add a template directly in your Blade view:
 
 ### Add Meta Tags
 
-Add the meta tags to your layout's `<head>`:
+Add the meta-tags to your layout's `<head>`:
 
 ```blade
 <head>
@@ -84,14 +84,14 @@ Add the meta tags to your layout's `<head>`:
 </head>
 ```
 
-## Why Ogkit?
+## Why OG Kit?
 
-Static OG images are limiting. You want dynamic images that reflect your content - blog titles, product names, user profiles. Ogkit lets you design OG images with tools you already know: HTML, CSS, and Tailwind.
+Static OG images are limiting. You want dynamic images that reflect your content – blog titles, product names, user profiles. OG Kit lets you design OG images with tools you already know: HTML, CSS, and Tailwind.
 
 **How it works:**
 
 1. Add a template to your page (via controller or Blade)
-2. Ogkit's service screenshots that template at 1200x630
+2. OG Kit's service screenshots that template at 1200x630
 3. The screenshot URL is used as your `og:image`
 
 No image generation code. No Puppeteer servers. No Canvas APIs. Just HTML.
@@ -338,7 +338,7 @@ Get just the image URL:
 <meta property="og:image" content="@ogkitUrl">
 ```
 
-With version parameter for cache busting:
+With a version parameter for cache busting:
 
 ```blade
 <meta property="og:image" content="@ogkitUrl(version: 'v2')">
@@ -506,12 +506,12 @@ composer test
 
 - PHP 8.2+
 - Laravel 10, 11, or 12
-- [Ogkit](https://ogkit.dev) API key
+- [OG Kit](https://ogkit.dev) API key
 
 ## Credits
 
+- [OG Kit](https://ogkit.dev) by [Peter Suhm](https://github.com/petersuhm)
 - [Mischa Sigtermans](https://github.com/mischasigtermans)
-- [All Contributors](../../contributors)
 
 ## License
 
