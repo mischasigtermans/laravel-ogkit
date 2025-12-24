@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] - 2025-12-24
+
+### Changed
+- Preview modal now uses a single vanilla implementation (removed Filament/Flux variants)
+
 ## [0.2.0] - 2025-12-24
 
 ### Added

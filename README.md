@@ -112,13 +112,7 @@ Enable the preview overlay during development to see your OG images in real-time
 OGKIT_PREVIEW=true
 ```
 
-The preview button is automatically injected into all HTML responses. It supports:
-
-- **Filament panels**: Uses Filament's modal component
-- **Flux UI**: Uses Flux's modal component
-- **Vanilla**: Falls back to a custom modal with no dependencies
-
-Click the "OG Preview" button to see exactly what will be screenshotted.
+A preview button is automatically injected into all HTML responses. Click "OG Preview" to see exactly what will be screenshotted.
 
 ## Templates
 
@@ -303,9 +297,6 @@ return [
     'api_key' => env('OGKIT_API_KEY'),
     'preview' => env('OGKIT_PREVIEW', false),
     'base_url' => env('OGKIT_BASE_URL', 'https://ogkit.dev'),
-
-    // Paths where Filament CSS is loaded (for preview modal styling)
-    'filament_paths' => ['/app'],
 
     'defaults' => [
         'template' => 'wireframe-split',
