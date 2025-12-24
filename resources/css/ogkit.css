@@ -51,6 +51,10 @@
     font-family: var(--og-font-family), system-ui, sans-serif;
 }
 
+.og-font-secondary {
+    font-family: var(--og-font-family-secondary), serif;
+}
+
 /* Gradient backgrounds */
 .og-bg-type-gradient-vertical {
     background: linear-gradient(to bottom, var(--og-background-primary-color), var(--og-background-secondary-color));
