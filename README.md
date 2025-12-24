@@ -116,7 +116,7 @@ A preview button is automatically injected into all HTML responses. Click "OG Pr
 
 ## Templates
 
-21 pre-built templates included:
+22 pre-built templates included:
 
 | Template | Fields | Best For |
 |----------|--------|----------|
@@ -134,6 +134,7 @@ A preview button is automatically injected into all HTML responses. Click "OG Pr
 | `simple` | title, subtitle, domain | General use |
 | `simple-logo` | title, subtitle, logo | Brand pages |
 | `detailed` | title, readingTime, category, image, domain | Blog posts |
+| `wireframe` | title, subtitle, domain | Minimal pages |
 | `wireframe-background` | title, image, domain | Tech content |
 | `wireframe-split` | title, description, image, domain | Articles |
 | `layered` | title, category, image, domain | Featured content |

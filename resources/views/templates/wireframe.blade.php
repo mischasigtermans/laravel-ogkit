@@ -1,7 +1,6 @@
 @props([
     'title' => '',
     'subtitle' => '',
-    'image' => '',
     'domain' => parse_url(config('app.url'), PHP_URL_HOST),
 ])
 
@@ -16,8 +15,6 @@
         <div class="border-t border-current border-dashed"></div>
     </div>
 
-    <div class="absolute inset-x-0 bottom-0 h-40 -skew-y-[15deg] og-bg-accent"></div>
-
     <div class="flex flex-col relative z-10 w-full h-full p-24">
         <p class="pl-12 -mx-12 text-base font-bold tracking-wider uppercase border-l og-border-accent og-text-accent">
             {{ $domain }}
@@ -31,6 +28,4 @@
             <p class="mt-5 text-2xl og-text-secondary">{!! html_entity_decode($subtitle) !!}</p>
         @endif
     </div>
-
-    <img class="absolute inset-0 object-cover w-full h-full opacity-25" src="{{ $image }}" alt="">
 </div>

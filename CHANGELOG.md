@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 
 ## [0.2.1] - 2025-12-24
 
+### Added
+- New `wireframe` template for minimal pages (title, subtitle, domain)
+
 ### Changed
 - Preview modal now uses a single vanilla implementation (removed Filament/Flux variants)
 
@@ -29,7 +32,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - `<x-ogkit-template>` Blade component for OG image templates
 - `Ogkit::template()` method to set templates from controllers/components
-- 21 pre-built templates: split-title, image, headline, bold, bold-logo, masked, masked-logo, outlined, centered, centered-logo-avatar, poppin, simple, simple-logo, detailed, wireframe-background, wireframe-split, layered, default, bold-sale, documentation, repository
+- 21 pre-built templates: split-title, image, headline, bold, bold-logo, masked, masked-logo, outlined, centered, centered-logo-avatar, poppin, simple, simple-logo, detailed, wireframe-background, wireframe-split, wireframe, layered, default, bold-sale, documentation, repository
 - CSS utilities for template styling (backgrounds, text, borders, patterns)
 - `@ogkit` directive for complete meta tag output (og:image, og:title, og:description, twitter:card)
 - `@ogkitUrl` directive for image URL only
