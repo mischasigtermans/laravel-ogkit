@@ -37,7 +37,7 @@ it('can set and render template from service', function () {
     $ogkit->template('simple', ['title' => 'Test Title']);
 
     expect($ogkit->getTemplateData())->toBe([
-        'name' => 'simple',
+        'template' => 'simple',
         'data' => ['title' => 'Test Title'],
     ]);
 

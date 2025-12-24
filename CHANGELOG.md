@@ -2,7 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.0] - 2025-12-22
+## [0.2.0] - 2025-12-24
+
+### Added
+- Secondary font support via `fontSecondary` prop and `font_secondary` config option
+- `.og-font-secondary` CSS utility class for applying secondary font in templates
+- `description` field to `wireframe-split` template
+- Default template fallback from config (`defaults.template`)
+- Responsive layout in `wireframe-split`: content adjusts when description is absent
+
+### Changed
+- Renamed `name` prop to `template` on the `<x-ogkit-template>` component
+- Internal: `Ogkit::getTemplateData()` now returns `template` key instead of `name`
+- Improved `wireframe-split` template spacing and typography
+
+### Fixed
+- HTML entities now properly decoded in template descriptions
+
+## [0.1.0] - 2025-12-22
 
 ### Added
 - `<x-ogkit-template>` Blade component for OG image templates

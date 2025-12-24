@@ -16,7 +16,7 @@ class Ogkit
     public function template(string $name, array $data = []): static
     {
         $this->templateData = [
-            'name' => $name,
+            'template' => $name,
             'data' => $data,
         ];
 
@@ -35,7 +35,7 @@ class Ogkit
         }
 
         return View::make('ogkit::components.template', [
-            'name' => $this->templateData['name'],
+            'template' => $this->templateData['template'],
             ...$this->templateData['data'],
         ])->render();
     }

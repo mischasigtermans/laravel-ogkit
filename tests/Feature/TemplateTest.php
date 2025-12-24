@@ -49,7 +49,7 @@ $backgroundTypes = [
 
 it('can render template component', function () {
     $view = View::make('ogkit::components.template', [
-        'name' => null,
+        'template' => null,
         'slot' => '<p>Test content</p>',
     ]);
 
@@ -59,9 +59,9 @@ it('can render template component', function () {
     expect($html)->toContain('og-template');
 });
 
-it('can render template component with name', function () {
+it('can render template component with template prop', function () {
     $view = View::make('ogkit::components.template', [
-        'name' => 'simple',
+        'template' => 'simple',
     ]);
 
     $html = $view->render();

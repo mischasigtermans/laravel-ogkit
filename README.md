@@ -68,7 +68,7 @@ Add a template directly in your Blade view:
 
 ```blade
 <x-ogkit-template
-    name="split-title"
+    template="split-title"
     title="Welcome to My Site"
     subtitle="Building amazing things"
 />
@@ -141,7 +141,7 @@ Click the "OG Preview" button to see exactly what will be screenshotted.
 | `simple-logo` | title, subtitle, logo | Brand pages |
 | `detailed` | title, readingTime, category, image, domain | Blog posts |
 | `wireframe-background` | title, image, domain | Tech content |
-| `wireframe-split` | title, image, domain | Articles |
+| `wireframe-split` | title, description, image, domain | Articles |
 | `layered` | title, category, image, domain | Featured content |
 | `default` | title, subtitle, price, fromPrice, image | E-commerce |
 | `bold-sale` | title, price, fromPrice, image | Sales |
@@ -164,10 +164,19 @@ Or in Blade:
 
 ```blade
 <x-ogkit-template
-    name="layered"
+    template="layered"
     title="How to Build Great Products"
     category="Engineering"
     :image="asset('images/hero.jpg')"
+/>
+```
+
+If you've set a default template in your config, you can omit the `template` prop:
+
+```blade
+<x-ogkit-template
+    title="How to Build Great Products"
+    :description="$article->excerpt"
 />
 ```
 
@@ -219,6 +228,10 @@ Use these classes in your templates:
 .og-border-primary
 .og-border-secondary
 .og-border-accent
+
+/* Fonts */
+.og-font           /* Primary font */
+.og-font-secondary /* Secondary font (serif by default) */
 ```
 
 ### Background Types
@@ -264,6 +277,18 @@ $ogkit->template('split-title', [
 ]);
 ```
 
+You can also set a secondary font for accent text like domains or labels:
+
+```php
+$ogkit->template('wireframe-split', [
+    'title' => 'My Article',
+    'font' => 'Open Sans',
+    'fontSecondary' => 'Besley',
+]);
+```
+
+Use the `.og-font-secondary` utility class in your custom templates to apply the secondary font.
+
 ## Configuration
 
 Publish the config file:
@@ -283,7 +308,9 @@ return [
     'filament_paths' => ['/app'],
 
     'defaults' => [
+        'template' => 'wireframe-split',
         'font' => 'Space Grotesk',
+        'font_secondary' => 'Besley',
         'accent' => '#171717',
         'typography' => [
             'primary' => '#171717',
