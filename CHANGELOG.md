@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.2] - 2025-12-28
+
+### Fixed
+- `wireframe-split` template now uses `subtitle` prop for consistency with `wireframe` template
+
 ## [0.2.1] - 2025-12-24
 
 ### Added
