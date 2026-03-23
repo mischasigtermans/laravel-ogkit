@@ -32,7 +32,7 @@ it('registers blade directives', function () {
 });
 
 it('can set and render template from service', function () {
-    $ogkit = app(\Ogkit\Ogkit::class);
+    $ogkit = app(OgkitService::class);
 
     $ogkit->template('simple', ['title' => 'Test Title']);
 

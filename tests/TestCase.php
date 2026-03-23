@@ -2,6 +2,7 @@
 
 namespace Ogkit\Tests;
 
+use Ogkit\Facades\Ogkit;
 use Ogkit\OgkitServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -17,7 +18,7 @@ class TestCase extends Orchestra
     protected function getPackageAliases($app): array
     {
         return [
-            'Ogkit' => \Ogkit\Facades\Ogkit::class,
+            'Ogkit' => Ogkit::class,
         ];
     }
 }
